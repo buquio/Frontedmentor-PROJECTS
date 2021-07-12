@@ -1,0 +1,44 @@
+/* ## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* ## Colors
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+body{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color:hsl(212, 23%, 69%); 
+    background-color:hsl(210, 46%, 95%) ;
+}
+.footer{
+   display: flex;
+   
+}
+
+
+
+h2{
+    color:hsl(217, 19%, 35%) ;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+/* ## Icons */
+
+/* We provide SVGs for the social icons. But please feel free to use a font icon library if you like. 
+Some suggestions can be found below: */
+
+/* - [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+/* <i class="far fa-bacon"></i> */
+/* f368 */

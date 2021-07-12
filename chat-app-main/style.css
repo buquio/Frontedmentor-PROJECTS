@@ -1,0 +1,300 @@
+:root {
+  /* Texts */
+  --subHeading: hsl(276, 100%, 81%);
+  --chatLeft: hsl(276, 55%, 52%);
+  --chatRight: hsl(271, 15%, 43%);
+  --placeHolderText: hsl(206, 6%, 79%);
+  --mainHd: hsl(271, 36%, 24%);
+  --paragraph: hsl(270, 7%, 64%);
+
+  /* Gradients */
+
+  /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+  --LightMagenta: hsl(293, 100%, 63%);
+  --LightViolet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+
+  --White: hsl(0, 0%, 100%);
+  --appBg: hsl(270, 20%, 96%);
+  --submitBtn: hsl(271, 36%, 24%);
+  --radioButton: hsl(289, 100%, 72%);
+  --chatBg: #e9e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Main Content */
+
+.main {
+  padding-bottom: 0px;
+}
+
+.big-color {
+  height: 100vh;
+  background-image: linear-gradient(var(--LightMagenta), var(--LightViolet));
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 160px 160px;
+  position: relative;
+  right: 10px;
+}
+
+.transparency-container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.transparency {
+  height: 20vh;
+  width: 50%;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  position: relative;
+  right: 10px;
+  z-index: 2;
+}
+
+.chat-app {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  background-color: white;
+  position: relative;
+  right: 80px;
+  bottom: 35px;
+  z-index: 1;
+}
+
+/* Chat heading */
+
+.chat-heading {
+  width: 50%;
+  background-image: linear-gradient(
+    to left,
+    var(--LightMagenta),
+    var(--LightViolet)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 5% 4% 0%;
+}
+
+.less-than {
+  color: white;
+  font-size: 23px;
+  margin: 30px 0px 15px;
+}
+
+.less-than span {
+  padding-left: 10px;
+}
+
+.chat-avatar {
+  margin: 0px;
+  padding: 0px;
+  margin: 30px 0px 10px;
+}
+
+.chat-avatar img {
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.chat-name {
+  margin: 30px 0px 0px;
+  padding: 0px;
+  color: white;
+}
+
+.chat-name p {
+  font-size: 12px;
+}
+
+.chat-status {
+  font-size: 10px !important;
+  color: var(--subHeading);
+  transform: translateY(-15px);
+  margin: 0px;
+  padding: 0px;
+}
+
+.dots {
+  margin: 35px 0px 0px;
+  padding: 0px;
+  color: var(--appBg);
+}
+
+.dots i {
+  font-size: 13px;
+  margin-left: 70%;
+}
+
+/* Chat body */
+
+.chat-body {
+  background-color: var(--appBg);
+  margin: 0px 0px 15px 14px;
+  padding: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-txt {
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.chat-txt p {
+  display: inline-block;
+  font-size: 9px;
+  color: var(--chatLeft);
+  background: var(--chatBg);
+  border: 1px solid var(--chatBg);
+  border-radius: 10px;
+  padding: 5px 8px 5px 5px;
+  margin: 5px;
+}
+
+.chat-txt:nth-child(1) {
+  padding: 10px 0px 0px 10px !important;
+}
+
+.chat-img {
+  padding: 0px 10px 5px 10px;
+  margin-top: 10px;
+  margin-left: 43%;
+}
+
+.chat-img img {
+  width: 40px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.chat-txt-left p {
+  color: var(--chatRight) !important;
+  background-color: white;
+}
+
+.chat-txt:nth-child(4) {
+  margin-left: 44%;
+}
+
+.chat-txt:nth-child(5) {
+  margin-left: 62%;
+}
+
+/* Prices */
+
+.prices {
+  width: 60%;
+  margin: 5px 0px 10px 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--LightMagenta),
+    var(--LightViolet)
+  );
+  background-size: contain;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+}
+
+.circle i {
+  color: var(--radioButton);
+}
+
+.description,
+.price-rate {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.price-rate p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.description p {
+  font-size: 10px;
+  color: white;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+/* Message box */
+
+.message-box {
+  padding: 0px 10px 0px;
+}
+.message-box input[type="text"] {
+  color: var(--placeHolderText);
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+button[type="submit"] {
+  background-color: var(--submitBtn);
+  height: 33px;
+  border-radius: 50%;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--radioButton);
+}
+
+/* Article */
+
+.header {
+  padding-top: 45%;
+  position: relative;
+  left: 60px;
+  z-index: 1;
+}
+
+.header h1 {
+  color: var(--mainHd);
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.header p {
+  color: var(--paragraph);
+  font-size: 13px;
+}
+
+.big-color-right {
+  height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    rgba(249, 249, 249, 0.9948354341736695) 0%,
+    rgba(228, 228, 245, 1) 0%,
+    rgba(241, 241, 241, 0.989233193277311) 0%
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border-radius: 360px 0px 0px 0px;
+  position: relative;
+  top: 100px;
+}

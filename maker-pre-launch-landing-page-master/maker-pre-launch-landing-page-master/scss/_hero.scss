@@ -1,0 +1,124 @@
+@import "variables";
+@import "mixins";
+
+.hero {
+  position: relative;
+
+  &-bg {
+    min-height: 14.563rem;
+    width: 100vw;
+    background-image: url("./../assets/illustration-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__left {
+      position: absolute;
+      margin-left: calc(-60vw - 10rem);
+      height: 22.313rem;
+      width: 100%;
+      background-image: url("./../assets/illustration-hero-left.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+
+      @include breakpoint-up(desktop){
+        margin-left: calc(-60vw - 14.063rem);
+        height: 28.688rem;
+      }
+    }
+
+    &__right {
+      position: absolute;
+      margin-left: 81%;
+      height:  22.313rem;
+      width: 19%;
+      background-image: url("./../assets/illustration-hero-right.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+
+      @include breakpoint-up(desktop){
+        height: 28.688rem;
+        width: 22%;
+        margin-left: 78%;
+      }
+    }
+  }
+
+  &-container {
+
+    width: 20.438rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    @include breakpoint-up(tablet){
+      width: 28.563rem;
+      background-image: url("./../assets/bg-hero-squiggle.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    @include breakpoint-up(desktop){
+      position: relative;
+      width: 45.625rem;
+      height: 23.625rem;
+    }
+
+    .hero-title {
+      width: 15.625rem;
+      margin: 3.063rem auto 0;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 2.5rem;
+
+      @include breakpoint-up(tablet){
+        width: 80%;
+      }
+
+      @include  breakpoint-up(desktop){
+        font-size: 3rem;
+        margin-top: 4.813rem;
+        line-height: 3.5rem;
+      }
+    }
+
+    .hero-description {
+      margin: 1.938rem auto;
+      text-align: center;
+      font-size: 0.938rem;
+      line-height: 1.563rem;
+      color: $gray;
+
+      @include breakpoint-up(tablet){
+        margin-top: 1.688rem;
+      }
+
+      @include breakpoint-up(desktop){
+        width: 33.75rem;
+      }
+    }
+
+    .hero-icon {
+      background-image: url("./../assets/icon-scroll.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      height: 2.625rem;
+      width: 1.625rem;
+      margin: auto auto 0;
+
+      @include breakpoint-up(desktop){
+        position: absolute;
+        left: 50%;
+        bottom: -10%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+  }
+
+
+}

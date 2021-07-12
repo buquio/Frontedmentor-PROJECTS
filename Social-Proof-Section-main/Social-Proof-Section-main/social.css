@@ -1,0 +1,116 @@
+ body{
+     padding: 100px; 
+     font-family: 'Spartan', sans-serif;
+     font-size: 15px;
+    }
+
+h1{
+    font-weight: 900;
+}
+
+p{
+    font-weight: 400;
+}
+
+.Typo > p{
+    font-size: 12px;
+}
+
+.Typo > h1 {
+    font-weight: bolder;
+}
+
+.StarRatings > p {
+    font-weight: 500;
+}
+.FirstSection{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+.Star{
+    display: inline;
+}
+.StarRatings{
+    background: hsl(300, 24%, 96%);
+    padding: 10px 20px 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.Typo{
+    width: 50%;
+}
+
+.Rate{
+    margin-left: 110px;
+
+}
+
+.cardz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.card1{
+    background: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+    width: 30%;
+    
+}
+
+.CardMag{
+    margin-top: 40px;
+}
+.card-body {
+    padding: 30px 20px;
+    font-size: smaller;
+  }
+
+.MG1{
+    margin-left: 50px;
+}
+.MG2{
+    margin-left: 100px;
+}
+
+
+
+@media only screen and (max-width: 505px) {
+   
+
+    .FirstSection{
+        flex-direction: column;
+    }
+
+    .cardz{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .Typo{
+        width: 100%;
+    }
+    .Rate{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    .StarRatings {
+        width: 100%;
+    }
+
+    .MG1, .MG2{
+        margin-left: 0;
+    }
+
+}

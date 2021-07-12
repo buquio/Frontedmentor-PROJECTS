@@ -1,0 +1,235 @@
+/* For media screen of max width of 576px */
+
+@media screen and (max-width: 576px) {
+  /* Main Content */
+  .main-content {
+    padding: 0px;
+    margin: 0px;
+  }
+  .big-color {
+    height: 80vh;
+    right: -15px;
+    z-index: 1;
+  }
+
+  .app-side {
+    margin-top: 15%;
+  }
+
+  .transparency {
+    height: 6.8vh;
+    right: 15px;
+    z-index: 2;
+  }
+
+  .chat-app {
+    right: 80px;
+    bottom: 35px;
+    z-index: 1;
+  }
+
+  /* Chat heading */
+
+  .chat-heading {
+    width: 50%;
+    margin: 4% 0% 0% 4%;
+  }
+
+  .less-than {
+    font-size: 20px;
+    margin: 35px 0px 15px;
+  }
+
+  .less-than span {
+    padding-left: 2px;
+  }
+
+  .chat-avatar {
+    margin: 35px 0px 10px;
+  }
+
+  .chat-avatar img {
+    width: 30px;
+  }
+
+  .chat-name {
+    margin: 35px 0px 0px;
+  }
+
+  .chat-name p {
+    font-size: 10px;
+  }
+
+  .dots i {
+    font-size: 11px;
+    margin-left: 40%;
+  }
+
+  /* Chat body */
+
+  .chat-body {
+    margin: 0px 0px 12px 10px;
+  }
+
+  .chat-txt {
+    padding: 0px 5px;
+  }
+
+  .chat-txt p {
+    font-size: 7.5px;
+    margin: 3px;
+  }
+
+  .chat-txt:nth-child(1) {
+    padding: 10px 0px 0px 5px !important;
+  }
+
+  .chat-img {
+    padding: 0px 10px 5px 15px;
+  }
+
+  .chat-img img {
+    width: 25px;
+  }
+
+  /* Prices */
+
+  .prices {
+    width: 80%;
+    height: 40px;
+  }
+
+  .circle i {
+    font-size: 13px;
+  }
+
+  .description p {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+
+  .price-rate p {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 17px;
+  }
+
+  /* Message box */
+
+  .message-box {
+    padding: 0px 10px 0px;
+  }
+
+  .message-box input[type="text"] {
+    font-size: 11px;
+  }
+
+  button[type="submit"] {
+    height: 30px;
+    padding: 5px;
+  }
+
+  /* Article */
+
+  .header {
+    padding-top: 0%;
+    position: relative;
+    left: 0px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .header h1 {
+    margin-bottom: 15px;
+  }
+
+  .header p {
+    font-size: 12px;
+    width: 70%;
+    margin: auto;
+  }
+
+  .big-color-right {
+    display: none;
+  }
+}
+
+/* For media screen of min width of 577px and max width of 768px */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* Main Content */
+  .main-content {
+    padding: 0px 40px 0px 0px !important;
+  }
+
+  .big-color {
+    height: 120vh !important;
+  }
+
+  .transparency {
+    right: 45px !important;
+  }
+  .chat-app {
+    right: 120px !important;
+  }
+}
+
+/* For media screen of min width of 769px and max width of 992px */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* Main Content */
+
+  .big-color {
+    right: 0px;
+  }
+
+  .transparency {
+    right: 0px;
+  }
+
+  .chat-app {
+    right: 60px;
+  }
+
+  /* Chat heading */
+
+  .less-than span {
+    padding-left: 0px;
+  }
+
+  /* Chat body */
+
+  .chat-body {
+    margin: 0px 0px 15px 11px;
+  }
+
+  .chat-img {
+    padding: 0px 10px 5px 10px;
+    margin-top: 10px;
+    margin-left: 53%;
+  }
+
+  .chat-img img {
+    width: 25px;
+  }
+
+  /* Prices */
+
+  .prices {
+    width: 80%;
+  }
+
+  /* Article */
+
+  .header {
+    left: 40px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header p {
+    font-size: 12px;
+  }
+}

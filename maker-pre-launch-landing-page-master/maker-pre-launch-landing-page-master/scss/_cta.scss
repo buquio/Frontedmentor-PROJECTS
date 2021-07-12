@@ -1,0 +1,177 @@
+@import "variables";
+@import "mixins";
+
+.cta {
+
+  display: flex;
+  flex-direction: column;
+  margin: 6.875rem auto;
+  width: 20.438rem;
+  text-align: center;
+
+  @include breakpoint-up(tablet){
+    width: 35.813rem;
+  }
+
+  @include breakpoint-up(desktop){
+    width: auto;
+  }
+
+  &-title {
+
+    @include breakpoint-up(desktop){
+      width: 33.75rem;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bolder;
+
+      @include breakpoint-up(desktop){
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-size: 0.938rem;
+      line-height: 1.563rem;
+    }
+  }
+
+  &-wrapper {
+
+    @include breakpoint-up(desktop){
+      display: flex;
+      margin: 3.75rem auto;
+    }
+  }
+
+  &-free {
+    background-color: $darkBlue;
+    border-radius: 0.625rem;
+    height: 25.438rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5rem auto;
+    padding: 0 2.25rem;
+    justify-content: space-evenly;
+    text-align: left;
+    position: relative;
+
+    @include breakpoint-up(tablet){
+      width: 27.813rem;
+      height: 28rem;
+      padding: 0 2.5rem;
+    }
+
+    @include breakpoint-up(desktop){
+      margin-right: 1.875rem;
+      align-self: center;
+    }
+
+    &__icon img {
+      position: absolute;
+      top: -2rem;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      font-weight: bolder;
+    }
+
+    &__text {
+      font-size: 0.938rem;
+      font-weight: lighter;
+      line-height: 1.563rem;
+    }
+
+    &__plan {
+      font-size: 2.5rem;
+      font-weight: bolder;
+    }
+
+    &__list {
+
+      & > ul {
+        list-style: none;
+        padding: 0;
+        font-size: 0.938rem;
+        font-weight: lighter;
+        line-height: 2.188rem;
+
+        & > li span {
+          margin-right: 0.625rem;
+        }
+      }
+
+    }
+  } // end .cta-free
+
+  &-paid {
+    background-color: $lightBlue;
+    color: $veryDarkBlue;
+    border-radius: 0.625rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5rem auto;
+    padding: 0 2.25rem;
+    justify-content: space-evenly;
+    text-align: left;
+    position: relative;
+
+    @include breakpoint-up(tablet){
+      width: 27.813rem;
+      height: 30.125rem;
+      padding: 0 2.75rem;
+    }
+
+    &__icon img {
+      position: absolute;
+      top: -2.125rem;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      font-weight: bolder;
+    }
+
+    &__text {
+      font-size: 0.938rem;
+      font-weight: lighter;
+      line-height: 1.563rem;
+    }
+
+    &__plan {
+      display: flex;
+      font-size: 2.5rem;
+      font-weight: bolder;
+
+      & > span {
+        font-size: 0.938rem;
+        align-self: center;
+        font-weight: 300;
+        margin-left: 0.625rem;
+      }
+    }
+
+    &__list {
+
+      & > ul {
+        list-style: none;
+        padding: 0;
+        font-size: 0.938rem;
+        font-weight: inherit;
+        line-height: 2.188rem;
+
+        & > li span {
+          margin-right: 0.625rem;
+        }
+      }
+
+    }
+  } // end .cta-paid
+
+}

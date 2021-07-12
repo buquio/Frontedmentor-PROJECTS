@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  font-size: 12px;
+}
+
+.accordion {
+  font-family: "Kumbh Sans", sans-serif;
+  height: auto;
+  padding-bottom: 4rem;
+  width: 80%;
+  margin: 7rem auto;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.accordion .women-images {
+  position: absolute;
+  top: -90px;
+  left: 5%;
+  width: 100%;
+}
+
+.accordion .women-images-shadow {
+  position: absolute;
+  left: 9%;
+  top: 0.5rem;
+  width: 100%;
+}
+
+.accordion .women-image {
+  width: 80%;
+}
+
+.accordion .women-image-shadow {
+  width: 80%;
+}
+
+.accordion .faq {
+  height: 15rem;
+  padding-top: 11rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(237, 12%, 33%);
+}
+
+.accordion .questions .qna {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin: auto 1rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.accordion .questions .question {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion .questions .question img {
+  padding-left: 0.5rem;
+  height: 0.6rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.accordion .questions .question img.arrow-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  margin-right: -0.5rem;
+}
+
+.accordion .questions .question .text,
+.accordion .questions .answer .text-open {
+  color: hsl(237, 12%, 33%);
+}
+
+.accordion .questions .question .text:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+
+.accordion .questions .answer .text-open {
+  display: none;
+  width: 90%;
+  line-height: 1.2rem;
+}
+
+/* To be added when clicked on arrow-button */
+.accordion .questions .question .text.text-bold {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 465px) {
+  .accordion {
+    width: 70%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+  .accordion .women-images {
+    position: absolute;
+    top: 5rem;
+    left: -7rem;
+    width: 60%;
+  }
+  .accordion .women-images-shadow {
+    position: absolute;
+    left: -20rem;
+    top: 20rem;
+    width: 80%;
+  }
+  .accordion .questions .qna {
+    padding: 1rem 0;
+    margin: auto;
+    width: 60%;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+  }
+  .accordion .faq {
+    height: 0rem;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: left;
+    font-weight: 700;
+    font-size: 2rem;
+    color: black;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

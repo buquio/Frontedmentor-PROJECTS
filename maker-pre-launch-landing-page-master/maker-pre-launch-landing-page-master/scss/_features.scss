@@ -1,0 +1,136 @@
+@import "variables";
+@import "mixins";
+
+.features {
+
+  margin-top: 9rem;
+
+  .features__wrapper {
+
+    width: 20.438rem;
+    margin: auto;
+
+    @include breakpoint-up(tablet){
+      width: 35.813rem;
+    }
+
+    @include breakpoint-up(desktop){
+      margin-top: 14.063rem;
+      width: 69.375rem;
+      height: 23.938rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .feature-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "img"
+      "img"
+      "title"
+      "text";
+      text-align: center;
+      margin-bottom: 3.5rem;
+
+      @include breakpoint-up(tablet){
+        display: grid;
+        grid-template-columns: 0.75fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0 3.438rem;
+        grid-template-areas:
+        "img title"
+        "img text";
+        width: 32.188rem;
+        text-align: left;
+
+        &:nth-child(odd){
+          margin-left: auto;
+
+          @include breakpoint-up(desktop){
+            margin-left: unset;
+          }
+        }
+
+        &:nth-child(even){
+
+          @include breakpoint-up(desktop){
+            margin: auto 0 0 0;
+          }
+        }
+
+      }
+
+      @include breakpoint-up(desktop){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 0.688rem;
+        grid-template-areas:
+        "img"
+        "img"
+        "title"
+        "text";
+        text-align: left;
+        margin-bottom: 3.5rem;
+        width: 15.313rem;
+      }
+
+      &__img {
+        grid-area: img;
+        display: flex;
+        margin: auto;
+        width: 7.5rem;
+        height: 7.75rem;
+        background-color: $darkBlue;
+        border-radius: 3.125rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+
+        @include breakpoint-up(desktop){
+          width: 10.25rem;
+          height: 10.25rem;
+          margin-left: 0;
+        }
+      }
+
+      &__title {
+        grid-area: title;
+        font-size: 1.125rem;
+        font-weight: bolder;
+        margin: auto 0;
+      }
+
+      &__text {
+        grid-area: text;
+        font-size: 0.938rem;
+        font-weight: lighter;
+        color: $gray;
+        line-height: 1.563rem;
+      }
+
+    }
+
+  }
+
+}
+
+// Images
+#passions {
+  background-image: url("./../assets/illustration-passions.svg");
+}
+
+#financial {
+  background-image: url("./../assets/illustration-financial-freedom.svg");
+}
+
+#lifestyle {
+  background-image: url("./../assets/illustration-lifestyle.svg");
+}
+
+#work {
+  background-image: url("./../assets/illustration-work-anywhere.svg");
+  background-size: 65%;
+}

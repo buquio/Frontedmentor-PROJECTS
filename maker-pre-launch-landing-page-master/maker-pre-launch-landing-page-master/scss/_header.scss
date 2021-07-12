@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  height: 8.813rem;
+  background-color: $veryDarkBlue;
+  display: flex;
+
+  @include breakpoint-up(desktop){
+    height: 13.313rem;
+  }
+
+  img {
+    height: 2.188rem;
+    width: 7.5rem;
+    margin: auto;
+
+    @include breakpoint-up(tablet){
+      margin: 3rem 2.25rem;
+    }
+
+    @include breakpoint-up(desktop){
+      margin: 5.063rem 6.063rem;
+    }
+  }
+}

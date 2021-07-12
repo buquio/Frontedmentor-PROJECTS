@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("/fonts/poppins/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("/fonts/poppins/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #674baf;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% 1.3fr 1fr;
+  grid-template-rows: 170px 1fr repeat(3, 1fr);
+  grid-template-areas: "espacio navigation navigation " "espacio contenido1  contenido2" "espacio     button      button  " "espacio    icon-social  icon-social" "espacio     footer      footer  ";
+}
+.container .navbar-huddle {
+  grid-column: navigation/navigation;
+  grid-row: navigation/navigation;
+}
+.container .container-content-img {
+  grid-column: contenido1/contenido1;
+  grid-row: contenido1/contenido1;
+}
+.container .container-content-text {
+  grid-column: contenido2/contenido2;
+  grid-row: contenido2/contenido2;
+}
+.container .btn-box {
+  grid-column: button/button;
+  grid-row: button/button;
+}
+.container .container-icons {
+  grid-column: icon-social/icon-social;
+  grid-row: icon-social/icon-social;
+}
+.container footer {
+  grid-column: footer/footer;
+  grid-row: footer/footer;
+}
+
+.header-huddle {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/bg-desktop.svg");
+  background-size: 100% 101%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header-huddle .container-content-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-huddle .container-content-img img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header-huddle .container-content-text {
+  width: 100%;
+  padding: 10% 10% 0 10%;
+}
+.header-huddle .container-content-text .text-title {
+  font-family: "Poppins-regular";
+  font-size: 1.28rem;
+  color: white;
+  text-transform: capitalize;
+  text-align: left;
+  width: 100%;
+  align-self: center;
+  margin-top: 1rem;
+}
+.header-huddle .container-content-text .parraf {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.navbar-huddle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar-huddle .navbar-brand-huddle {
+  width: 50%;
+}
+
+footer .attribution {
+  color: white;
+  font-family: "Open Sans";
+}
+
+.container-icons {
+  width: 100%;
+  padding-right: 4rem;
+}
+.container-icons .box-icons-social {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container-icons .box-icons-social a {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.btn-box {
+  margin-top: 1rem;
+}
+.btn-box .btn-register {
+  font-family: "Poppins-regular";
+  font-size: 0.8rem;
+  color: #674baf;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem;
+  cursor: pointer;
+  line-height: 20px;
+  width: 160px;
+  box-shadow: 1px 0 30px #674baf;
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "navigation navigation navigation" "contenido1 contenido1 contenido1" "contenido2 contenido2 contenido2" "button     button     button    " "icon-social icon-social icon-social" "footer      footer      footer     ";
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-right: 8%;
+  }
+
+  .header-huddle {
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-huddle {
+    margin-bottom: 3rem;
+  }
+
+  .navbar-brand-huddle img {
+    width: 150px;
+  }
+
+  .container-content-text {
+    padding: 0 !important;
+  }
+  .container-content-text .text-title h1 {
+    text-align: center;
+    font-size: 1.66rem;
+  }
+  .container-content-text .parraf {
+    text-align: center;
+    padding: 0 2% 0 3%;
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-box .btn-register {
+    width: 200px;
+    padding: 0.6rem;
+  }
+
+  .container-icons .box-icons-social a {
+    margin-right: 10px;
+  }
+
+  .container-icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0.8rem;
+  }
+  .container-icons .box-icons-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .attribution {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

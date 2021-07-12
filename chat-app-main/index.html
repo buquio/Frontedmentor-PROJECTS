@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/51416ae4aa.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap style links -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Css style links -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid main-content">
+      <div class="row main"> 
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-6 col-5 big-color"></div>
+
+            <div class="col-lg-6 col-md-8 col-sm-6 col-7 app-side">
+              <div class="row">
+                <div class="col-12 transparency-container">
+                  <div class="transparency"></div>
+                </div>
+
+                <div class="col-12 chat-app">
+                  <div class="row">
+                    <div class="col-11 chat-heading">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="row">
+                            <div class="col-6 less-than">
+                              <span>&lt;</span>
+                            </div>
+                            <div class="col-6 chat-avatar">
+                              <img src="images/avatar.jpg" alt="avatar" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4 col-6 chat-name">
+                          <p>Samuel Green</p>
+                          <p class="chat-status">Available to Walk</p>
+                        </div>
+                        <div class="col-sm-4 col-2 mr-auto dots">
+                          <i class="fas fa-ellipsis-v"></i><!-- used fontawesome here -->
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-11 chat-body">
+                      <div class="chat-txt">
+                        <p>
+                          That sounds great. I’d be <br />
+                          happy with that.
+                        </p>
+                      </div>
+                      <div class="chat-txt">
+                        <p>
+                          Could you send over some<br />pictures of your dog,
+                          please?
+                        </p>
+                      </div>
+                      <div class="chat-img">
+                        <img src="images/dog-image-1.jpg" alt="dog1" />
+                        <img src="images/dog-image-2.jpg" alt="dog2" />
+                        <img src="images/dog-image-3.jpg" alt="dog3" />
+                      </div>
+                      <div class="chat-txt chat-txt-left">
+                        <p>Here are a few pictures. She’s a happy girl!</p>
+                      </div>
+                      <div class="chat-txt chat-txt-left">
+                        <p>Can you make it?</p>
+                      </div>
+                      <div class="chat-txt">
+                        <p>
+                          She looks so happy! The time<br />
+                          we discussed works. How <br />
+                          long shall I take her out for?
+                        </p>
+                      </div>
+                      <div class="row prices">
+                        <div class="col-sm-2 col-2 circle">
+                          <i class="far fa-circle"></i>
+                        </div>
+                        <div class="col-sm-8 col-7 description">
+                          <p>30 minute walk</p>
+                        </div>
+                        <div class="col-sm-2 col-2 price-rate"><p>$29</p></div>
+                      </div>
+                      <div class="row prices">
+                        <div class="col-sm-2 col-2 circle">
+                          <i class="far fa-circle"></i>
+                        </div>
+                        <div class="col-sm-8 col-7 description">
+                          <p>1 hour walk</p>
+                        </div>
+                        <div class="col-sm-2 col-2 price-rate"><p>$49</p></div>
+                      </div>
+                      <div class="message-box input-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Type a message… "
+                        />
+                        <div class="send-btn input-group-append">
+                          <button class="btn" type="submit">&gt;</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 article">
+          <div class="row">
+            <div
+              class="col-lg-7 col-md-9 col-sm-7 col-11 container-fluid header"
+            >
+              <h1>Simple booking</h1>
+              <p>
+                Stay in touch with our dog walkers through the chat interface.
+                This makes it easy to discuss arrangements and make bookings.
+                Once the walk has been completed you can rate your walker and
+                book again all through the chat.
+              </p>
+            </div>
+            <div class="col-lg-5 col-md-3 col-sm-5 col-1 big-color-right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
